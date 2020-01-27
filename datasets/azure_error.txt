@@ -1,0 +1,5 @@
+directory
+@concat(string(formatDateTime(pipeline().TriggerTime,'yyyy')),string('/'),string(formatDateTime(pipeline().TriggerTime,'MM')),string('/'),string(formatDateTime(pipeline().TriggerTime,'dd')))
+
+file
+@concat(string('customers_'),string(formatDateTime(pipeline().TriggerTime,'yyyy-MM-dd_HH:mm:ss')),'.CSV')
