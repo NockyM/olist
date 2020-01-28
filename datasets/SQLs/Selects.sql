@@ -9,3 +9,6 @@ SELECT TOP (10) *
 
 SELECT TOP (10) *
   FROM [dbo].[geolocation]
+
+SELECT TOP (10) *
+  FROM dbo.dim_tempo;
